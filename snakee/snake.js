@@ -15,8 +15,8 @@ var snake = {
 	height: 20,
 	speed: 10,
 	direction: "stop",
-	colour: "#ff6961",
-	grayscale: "#b6abaa",
+	colour: "#000000",
+	grayscale: "#000000",
 	
 	tail: {
 		length: [],
