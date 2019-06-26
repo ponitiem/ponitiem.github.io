@@ -1,0 +1,31 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+canvas {
+	background: #eeeeee;
+	display: block;
+	margin: 0 auto;
+}
+
+.details {
+	text-align: center;
+}
+
+.scoreTextClass {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.hsTextClass {
+	font-size: 16px;
+}
+
+.footer {
+	font-size: 12px;
+	color: #aaaaaa;
+	padding: 10px;
+	text-align: center;
+}
