@@ -159,28 +159,28 @@ function pause() {
 function keyDownHandler(e) {
 	if (!paused) {
 		if (e.key == "Left" || e.key == "ArrowLeft") {
-			if (snake.direction != "left" && snake.direction != "right") {
+			if (snake.direction != "left" && (snake.direction != "right" || snake.tail.length.length < 2)) {
 				snake.direction = "left";
 				move();
 			}
 		}
 
 		if (e.key == "Right" || e.key == "ArrowRight") {
-			if (snake.direction != "right" && snake.direction != "left") {
+			if (snake.direction != "right" && (snake.direction != "left" || snake.tail.length.length < 2)) {
 				snake.direction = "right";
 				move();
 			}
 		}
 
 		if (e.key == "Up" || e.key == "ArrowUp") {
-			if (snake.direction != "up" && snake.direction != "down") {
+			if (snake.direction != "up" && (snake.direction != "down" || snake.tail.length.length < 2)) {
 				snake.direction = "up";
 				move();
 			}
 		}
 
 		if (e.key == "Down" || e.key == "ArrowDown") {
-			if (snake.direction != "down" && snake.direction != "up") {
+			if (snake.direction != "down" && (snake.direction != "up" || snake.tail.length.length < 2)) {
 				snake.direction = "down";
 				move();
 			}
